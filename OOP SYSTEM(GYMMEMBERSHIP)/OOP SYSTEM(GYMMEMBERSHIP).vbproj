@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB5C6A95-72D5-4B70-A7F5-566752052333}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OOP_SYSTEM_GYMMEMBERSHIP_.My.MyApplication</StartupObject>
+    <RootNamespace>OOP_SYSTEM_GYMMEMBERSHIP_</RootNamespace>
+    <AssemblyName>OOP SYSTEM%28GYMMEMBERSHIP%29</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OOP SYSTEM%28GYMMEMBERSHIP%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OOP SYSTEM%28GYMMEMBERSHIP%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addnewmember.Designer.vb">
+      <DependentUpon>addnewmember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addnewmember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="equipment.Designer.vb">
+      <DependentUpon>equipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="equipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetpass.Designer.vb">
+      <DependentUpon>forgetpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GymDbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDbDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GymDbDataSetmember.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDbDataSetmember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="maindashboardvb.Designer.vb">
+      <DependentUpon>maindashboardvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="maindashboardvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managecch.Designer.vb">
+      <DependentUpon>managecch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="managecch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managemember.Designer.vb">
+      <DependentUpon>managemember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="managemember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="membershipplan.Designer.vb">
+      <DependentUpon>membershipplan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="membershipplan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addnewmember.resx">
+      <DependentUpon>addnewmember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="equipment.resx">
+      <DependentUpon>equipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetpass.resx">
+      <DependentUpon>forgetpass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maindashboardvb.resx">
+      <DependentUpon>maindashboardvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managecch.resx">
+      <DependentUpon>managecch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managemember.resx">
+      <DependentUpon>managemember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="membershipplan.resx">
+      <DependentUpon>membershipplan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GymDbDataSet.xsc">
+      <DependentUpon>GymDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDbDataSet.xss">
+      <DependentUpon>GymDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSet1.xsc">
+      <DependentUpon>GymDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDbDataSet1.xss">
+      <DependentUpon>GymDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSet2.xsc">
+      <DependentUpon>GymDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDbDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDbDataSet2.xss">
+      <DependentUpon>GymDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSetmember.xsc">
+      <DependentUpon>GymDbDataSetmember.xsd</DependentUpon>
+    </None>
+    <None Include="GymDbDataSetmember.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDbDataSetmember.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDbDataSetmember.xss">
+      <DependentUpon>GymDbDataSetmember.xsd</DependentUpon>
+    </None>
+    <None Include="images\Ellipticals cross" />
+    <None Include="images\treadmill" />
+    <None Include="images\yooga matts" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dumbbell 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\GYM_UI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\NEW MEMBER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\coach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\GYM EQUIPMENT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MANAGEMEMBER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\membership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bench press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Gym bike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bench press.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kettlebell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Weight-Plate-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\rowing-machine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\leg press.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dumbbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\small dumbell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\barbell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\yooga matts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\battle rope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\smith machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\chest press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bench press tih.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\barbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\open eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GymDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GymDb_log.ldf">
+      <DependentUpon>GymDb.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="images\closebt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
